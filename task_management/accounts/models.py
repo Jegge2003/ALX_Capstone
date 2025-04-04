@@ -1,5 +1,10 @@
+
+"""
+Here we are building the CustomUser model which will be more like a user table inheriting all default fields of Django's AbstractUser.
+It will also have in addition bio and profile picture fields.
+"""
 #Importing necessary libraries
-from django.db import models
+from django.db import models #For building models which map to database tables
 from django.contrib.auth.models import AbstractUser
 
 # Creating a custom user model which extends Django's AbstractUser 

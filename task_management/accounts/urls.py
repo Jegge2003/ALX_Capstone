@@ -1,3 +1,4 @@
+#Importing the necessary libraries
 from django.urls import path
 from .views import RegisterView, LoginView
 from .views import CustomAuthToken
