@@ -88,8 +88,30 @@ This project is a Task Management API built with Django and Django REST Framewor
   }
 ]`
 
-#### 
+#### Get Task by ID
+- URL: `/api/tasks/<id>/`
+- Method: `GET`
+- Headers: `Token required`
+- Response: `200 OK`
 
+#### Update Task
+- URL: `/api/tasks/<id>/`
+- Method: `PUT` or `PATCH`
+- Headers: `Token required`
+- Request Body (example): `{
+  "status": "Completed"
+}`
+- Response: `200 OK`
+
+#### ❌ Delete Task
+- URL: `/api/tasks/<id>/`
+- Method: `DELETE`
+- Headers: `Token required`
+- Response: `204 No Content`
+
+#### ⚙️ Admin Panel
+- Accessible at `/admin/`
+- Admin users can view and manage all tasks and users
 
 
 
