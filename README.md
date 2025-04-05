@@ -57,7 +57,7 @@ This project is a Task Management API built with Django and Django REST Framewor
 - URL: `/api/tasks/`
 - Method: `POST`
 - Headers: `Token required`
-- Request Body: `{"title": "Do assignment", "description": "Finish ALX Backend", "status": "Pending", "priority": "High", "due_date": "2025-04-10"}
+- Request Body: `{"title": "Do assignment", "description": "Finish ALX Backend", "status": "Pending", "priority": "High", "due_date": "2025-04-10"}`
 - Response: `201 Created` {
   "id": 1,
   "title": "Do assignment",
@@ -68,7 +68,7 @@ This project is a Task Management API built with Django and Django REST Framewor
   "created_at": "2025-04-01T12:00:00Z",
   "updated_at": "2025-04-01T12:00:00Z",
   "user": 1
-}
+}`
 
 
 
