@@ -37,23 +37,23 @@ This project is a Task Management API built with Django and Django REST Framewor
 - Screenshots from Postman
 - Known Issues/ Future Improvements
 
-## API Documentation
+## 📘 API Documentation
 
-### 1. Authentication
-#### Register
+### 🧩 1. Authentication
+#### 🔐 Register
 - URL: `/api/accounts/register/`
 - Method: `POST`
 - Request Body: `{"username": "user1", "password": "your_password"}`
 - Response: `{"token": "user_auth_token"}`
 
-#### Login
+#### 🔐 Login
 - URL: `/api/accounts/login/`
 - Method: `POST`
 - Request Body: `{"username": "user1", "password": "your_password"}`
 - Response: `{"token": "user_auth_token"}`
 
-### 2. Task Endpoints
-#### Create Task
+### 🧾 2. Task Endpoints
+#### 📥  Create Task
 - URL: `/api/tasks/`
 - Method: `POST`
 - Headers: `Token required`
@@ -70,7 +70,7 @@ This project is a Task Management API built with Django and Django REST Framewor
   "user": 1
 }`
 
-#### List Tasks
+#### 📄 List Tasks
 - URL: `/api/tasks/`
 - Method: `GET`
 - Headers: `Token required`
@@ -88,13 +88,13 @@ This project is a Task Management API built with Django and Django REST Framewor
   }
 ]`
 
-#### Get Task by ID
+#### 🔍 Get Task by ID
 - URL: `/api/tasks/<id>/`
 - Method: `GET`
 - Headers: `Token required`
 - Response: `200 OK`
 
-#### Update Task
+#### ✏️  Update Task
 - URL: `/api/tasks/<id>/`
 - Method: `PUT` or `PATCH`
 - Headers: `Token required`
@@ -109,7 +109,7 @@ This project is a Task Management API built with Django and Django REST Framewor
 - Headers: `Token required`
 - Response: `204 No Content`
 
-#### ⚙️ Admin Panel
+#### ⚙️  Admin Panel
 - Accessible at `/admin/`
 - Admin users can view and manage all tasks and users
 
