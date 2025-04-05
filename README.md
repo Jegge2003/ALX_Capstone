@@ -1,6 +1,6 @@
 # Task Management API with Django REST Framework
 
-This project is a Task Management API built with Django and Django REST Framework. It allows users to register, authenticate, and manage their personal or professional tasks. This README covers setup and usage.
+This project is a Task Management API built with Django and Django REST Framework. This RESTful API allows users to register, authenticate, and manage personal tasks (Create, Read, Update, Delete). It also supports token-based authentication for secure access. This README covers setup and usage.
 
 ## Features Implemented
 
@@ -36,3 +36,15 @@ This project is a Task Management API built with Django and Django REST Framewor
 - API Usage Guide
 - Screenshots from Postman
 - Known Issues/ Future Improvements
+
+## API Documentation
+
+### Authentication
+#### Register
+- URL: `/api/accounts/register/
+- Method: `POST`
+- Request Body:
+    {
+        "username": "user1",
+        "password": "your_password"
+    }
