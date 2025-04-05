@@ -39,7 +39,7 @@ This project is a Task Management API built with Django and Django REST Framewor
 
 ## API Documentation
 
-### Authentication
+### 1. Authentication
 #### Register
 - URL: `/api/accounts/register/`
 - Method: `POST`
@@ -52,13 +52,13 @@ This project is a Task Management API built with Django and Django REST Framewor
 - Request Body: `{"username": "user1", "password": "your_password"}`
 - Response: `{"token": "user_auth_token"}`
 
-### Task Endpoints
+### 2. Task Endpoints
 #### Create Task
 - URL: `/api/tasks/`
 - Method: `POST`
 - Headers: `Token required`
 - Request Body: `{"title": "Do assignment", "description": "Finish ALX Backend", "status": "Pending", "priority": "High", "due_date": "2025-04-10"}`
-- Response: `201 Created` {
+- Response: `201 Created` `{
   "id": 1,
   "title": "Do assignment",
   "description": "Finish Django homework",
@@ -69,6 +69,32 @@ This project is a Task Management API built with Django and Django REST Framewor
   "updated_at": "2025-04-01T12:00:00Z",
   "user": 1
 }`
+
+#### List Tasks
+- URL: `/api/tasks/`
+- Method: `GET`
+- Headers: `Token required`
+- Response: `200 OK` `[
+  {
+    "id": 1,
+    "title": "Do assignment",
+    "description": "Finish Django homework",
+    "status": "Pending",
+    "priority": "High",
+    "due_date": "2025-04-10",
+    "created_at": "2025-04-01T12:00:00Z",
+    "updated_at": "2025-04-01T12:00:00Z",
+    "user": 1
+  }
+]`
+
+#### 
+
+
+
+
+
+
 
 
 
