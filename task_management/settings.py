@@ -105,14 +105,9 @@ WSGI_APPLICATION = 'task_management.wsgi.application'
 
 #Setting up Postgresql as the database
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'taskmanager',
-        'USER': 'taskuser',
-        'PASSWORD': 'strongpassword',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        default=os.getenv('DATABASE_URL')
+    )
 }
 
 
