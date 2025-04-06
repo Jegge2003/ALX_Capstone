@@ -31,6 +31,19 @@ schema_view = get_schema_view(
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
+    authentication_classes=[],
+)
+
+
+swagger_schema_view = get_schema_view(
+    openapi.Info(
+        title="Task Management API",
+        default_version='v1',
+        description="Test endpoints with your token 🔐",
+    ),
+    public=True,
+    permission_classes=[permissions.AllowAny],
+    authentication_classes=[],
 )
 
 urlpatterns = [
