@@ -44,7 +44,7 @@ This project is a Task Management API built with Django and Django REST Framewor
 - URL: `/api/accounts/register/`
 - Method: `POST`
 - Request Body: `{"username": "user1", "password": "your_password"}`
-- Response: `{"token": "user_auth_token"}`
+- Response: `{"username": "user1"}`
 
 #### 🔐 Login
 - URL: `/api/accounts/login/`
