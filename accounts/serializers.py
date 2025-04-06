@@ -16,9 +16,12 @@ class RegisterSerializer(serializers.ModelSerializer):
         """
         This gets triggered when someone sends a post request to register
         """
-        user = CustomUser.objects.create_user(**validated_data)
-        Token.objects.create(user=user) #Creates unique token tied to the user for logging in later
-        return user
+        try:
+            user = CustomUser.objects.create_user(**validated_data)
+            Token.objects.create(user=user) #Creates unique token tied to the user for logging in later
+            return user
+        except Exception as e:
+            raise serializers.ValidationError({"detail": str(e)})
     
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
